@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: rgba(33, 28, 28, 1);
+  color: rgba(165, 193, 255, 1);
+  width: 100%;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-header {
+  font-family: Inter;
+  display: flex;
+  text-align: center;
+  margin-left: 10px;
+  margin-top: 11px;
+}
+.aws {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+}
+.air {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+}
+.contact-header {
+  display: flex;
+  margin: 5px;
+}
+.contact-header-info {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  margin-left: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background-image: url("images/da1.png");
+  height: 531px;
+  width: 100%;
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper-headline1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  margin-left: 10px;
+  color: white;
+}
+.wrapper-headline2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 26px;
+  margin-left: 10px;
+  color: white;
+}
+.wrapper-headline3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  margin-left: 10px;
+  color: white;
+  margin-top: 40px;
+}
+.wrapper-nomoney {
+  margin-top: 17px;
+  border: 2px solid white;
+  border-radius: 30px;
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.item-wrapper-nomoney {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.caption {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.specialize-headline {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.specialize {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 54px;
+  height: 600px;
+  width: 1200px;
+}
+.item-specialize {
+  height: 205px;
+  width: 232px;
+}
+.specialize-caption {
+  background-color: rgba(54, 51, 51, 1);
+  color: white;
+  margin-top: 0;
+  height: 38px;
+  width: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 14px;
+  color: white;
+}
+
+.wayjob {
+  height: 740px;
+  width: 100%;
+  background-color: rgba(230, 230, 230, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+.wayjob-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+  margin-top: 39px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  text-align: center;
+  background-color: rgba(230, 230, 230, 1);
+}
+.wayjob-card {
+  width: 362px;
+  height: 470px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wayjob-card-text1 {
+  margin-top: 39px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+}
+.wayjob-card-elipse {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid rgba(255, 241, 0, 1);
+  border-radius: 50%;
+  padding: 0px;
+  width: 205px;
+  height: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wayjob-card-elipse img {
+  width: 71px;
+  height: 67px;
+}
+.comercial {
+  width: 100%;
+  height: 292px;
+  background-image: url("images/pic_free1.png");
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+}
+.comercial h1 {
+  margin-top: 39px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+  color: white;
+}
+.button-groupe {
+  display: flex;
+  justify-content: center;
+  gap: 157px;
+}
+.button-groupe button {
+  width: 352px;
+  height: 65px;
+  margin-top: 46px;
+  padding: 20px;
+  background-color: rgba(110, 94, 254, 1);
+  border-radius: 30px;
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+.job-step-container {
+  background-color: rgb(255, 255, 255);
+  height: 580px;
+  width: 100%;
+  padding: 20px;
+}
+.job-step-container h1 {
+  text-align: center;
+}
+
+.job-step {
+  margin-top: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
+  height: 400px;
+  display: flex;
+
+  justify-content: space-between;
+
+  /* text-align: center; */
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.step img {
+  height: 110px;
+  width: 110px;
+}
+#step2 {
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+#step1 {
+  align-self: flex-start;
+  justify-self: flex-start;
+}
+
+.arrow {
+  width: 115px;
+  height: 25px;
+  align-self: center;
+}
+.arrow img {
+  width: 150px;
+  height: 25px;
+  transform: rotate(40deg);
+}
+.arrow2 {
+  width: 115px;
+  height: 25px;
+  align-self: center;
+}
+.arrow2 img {
+  width: 150px;
+  height: 25px;
+  transform: rotate(-40deg);
+}
+
+.swtich-company-wrap {
+  width: 100%;
+  height: 660px;
+  background-image: url("images/pic_feat_bg1.png");
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+}
+
+.swtich-company-wrap h1 {
+  color: white;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+}
+.switch-card-groupe {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 175px;
+}
+.switch-company-card {
+  width: 310px;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Встановлюємо відносне позиціонування для блоку */
+}
+.switch-company-card img {
+  position: absolute;
+  top: -61px;
+  width: 122px;
+  height: 122px;
+}
+.switch-company-card p {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  height: 600px;
+  background-color: white;
+}
+
+footer {
+  width: 100%;
+  height: 453px;
+  background-image: url("images/pic_foot_bg1.png");
+  background-repeat: no-repeat; /* Вимикає повторення */
+  background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
+  background-position: center; /* Центрує зображення */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-card img {
+  width: 150px;
+  height: 150px;
+}
+
+.contact-card p {
+  font-family: Inter;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+}
