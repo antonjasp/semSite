@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   </head>
   <body>
     <header>
@@ -173,9 +174,26 @@
 </div>
 
 
-<div class="slider">
-
+<div class="slider-container">
+  <h2>Наші об'єкти</h2>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="images/imagesSlider/image1.jpg" alt="Object 1"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image2.jpg" alt="Object 2"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image3.jpg" alt="Object 3"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image4.jpg" alt="Object 4"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image5.jpg" alt="Object 1"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image6.jpg" alt="Object 2"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image7.jpg" alt="Object 3"></div>
+      <div class="swiper-slide"><img src="images/imagesSlider/image8.jpg" alt="Object 4"></div>
+    </div>
+    <!-- Кнопки навігації -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 </div>
+
+
     </main>
         <footer>
           <div class="contact-card"><img src="images/c-icn1.png" alt=""><p>Наш
@@ -186,5 +204,29 @@
           <div class="contact-card"><img src="images/c-icn3.png" alt=""><p>Ми працюємо<br> по
             м.Дніпро та області</p></div>
         </footer>
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script>
+          const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            spaceBetween: 20,
+            breakpoints: {
+              768: {
+                slidesPerView: 3,
+              },
+              480: {
+                slidesPerView: 1,
+              },
+            },
+          });
+        </script>
   </body>
 </html>

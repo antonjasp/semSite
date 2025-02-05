@@ -421,3 +421,29 @@ footer {
   color: white;
   text-align: center;
 }
+
+/* slider */
+.slider-container {
+  max-width: 1200px;
+  height: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f3f2f2;
+}
+.slider-container h2 {
+  margin-bottom: 20px;
+  font-family: Inter;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 32px;
+  text-align: center;
+}
+.swiper-slide {
+  width: 300px;
+  height: 300px;
+}
+.swiper-slide img {
+  width: 350px;
+  height: 350px;
+}
