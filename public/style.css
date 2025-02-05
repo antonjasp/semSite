@@ -10,7 +10,12 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 body,
 h1,
 h2,
@@ -40,7 +45,7 @@ img {
 header {
   background-color: rgba(33, 28, 28, 1);
   color: rgba(165, 193, 255, 1);
-  width: 100%;
+  width: 1440px;
   height: 76px;
   display: flex;
   justify-content: space-between;
@@ -84,7 +89,7 @@ main {
 .wrapper {
   background-image: url("images/da1.png");
   height: 531px;
-  width: 100%;
+  width: 1440px;
   background-repeat: no-repeat; /* Вимикає повторення */
   background-size: cover; /* Масштабує зображення, щоб воно покривало весь блок */
   background-position: center; /* Центрує зображення */
@@ -187,7 +192,7 @@ main {
 
 .wayjob {
   height: 740px;
-  width: 100%;
+  width: 1440px;
   background-color: rgba(230, 230, 230, 1);
   display: flex;
   align-items: center;
@@ -199,7 +204,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 50px;
-  width: 100%;
+  width: 1440px;
   margin-top: 39px;
   font-family: Inter;
   font-weight: 700;
@@ -242,7 +247,7 @@ main {
   height: 67px;
 }
 .comercial {
-  width: 100%;
+  width: 1440px;
   height: 292px;
   background-image: url("images/pic_free1.png");
   background-repeat: no-repeat; /* Вимикає повторення */
@@ -281,7 +286,7 @@ main {
 .job-step-container {
   background-color: rgb(255, 255, 255);
   height: 580px;
-  width: 100%;
+  width: 1440px;
   padding: 20px;
 }
 .job-step-container h1 {
@@ -340,7 +345,7 @@ main {
 }
 
 .swtich-company-wrap {
-  width: 100%;
+  width: 1440px;
   height: 660px;
   background-image: url("images/pic_feat_bg1.png");
   background-repeat: no-repeat; /* Вимикає повторення */
@@ -386,13 +391,13 @@ main {
 }
 
 .slider {
-  width: 100%;
+  width: 1440px;
   height: 600px;
   background-color: white;
 }
 
 footer {
-  width: 100%;
+  width: 1440px;
   height: 453px;
   background-image: url("images/pic_foot_bg1.png");
   background-repeat: no-repeat; /* Вимикає повторення */

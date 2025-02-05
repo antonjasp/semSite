@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -209,24 +210,8 @@
 
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script>
-          const swiper = new Swiper('.swiper', {
-            loop: true,
-            navigation: {
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
-            },
-            slidesPerView: 1,
-            spaceBetween: 20,
-            breakpoints: {
-              768: {
-                slidesPerView: 3,
-              },
-              480: {
-                slidesPerView: 1,
-              },
-            },
-          });
+        <script src="index.js">
+         
         </script>
   </body>
 </html>
