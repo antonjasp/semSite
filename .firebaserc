@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "airworkshop-fb4bd"
-  }
+    "default": "workshop-1e76b"
+  },
+  "targets": {},
+  "etags": {}
 }

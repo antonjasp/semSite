@@ -20,7 +20,7 @@
         </ul>
       </div>
       <div class="contact-header">
-        <img src="/images/contact.png" alt="" width="60px" height="60px" />
+        <a href="tel:+380960272443"><img src="images/contact.png" alt="" width="60px" height="60px" /></a>
         <ul class="contact-header-info">
           <li>+38(096)-027-24-43</li>
           <li>Пн-Нд 10:00-19:00</li>
@@ -35,7 +35,7 @@
         <div class="wrapper-headline3">Безкоштовно за 48 годин</div>
         <div class="wrapper-nomoney">
           <div class="item-wrapper-nomoney">
-            <img src="/images/Group 2.png" width="103px" height="89px" alt="">
+            <img src="images/Group 2.png" width="103px" height="89px" alt="">
             <div class="caption">Виїзд інженера</div>
           </div>
           <div class="item-wrapper-nomoney">
@@ -90,7 +90,11 @@
       <div class="wayjob-header">Наші напрямки</div>
 <div class="wayjob">
   
-  <div class="wayjob-card"><div class="wayjob-card-elipse"><img src="images/icon_serv_3.png" alt=""></div><div class="wayjob-card-text1">Автоматизація інженерних систем</div></div>
+  <div class="wayjob-card">
+    <div class="wayjob-card-elipse">
+      <img src="images/icon_serv_3.png" alt="">
+    </div><div class="wayjob-card-text1">Автоматизація інженерних систем</div>
+  </div>
   <div class="wayjob-card"><div class="wayjob-card-elipse"><img src="images/icon_serv_1.png" alt=""></div><div class="wayjob-card-text1">Вентиляція</div></div>
   <div class="wayjob-card"><div class="wayjob-card-elipse"><img src="images/icon_serv_2.png" alt=""></div><div class="wayjob-card-text1">Кондиціонування</div></div>
 
@@ -99,8 +103,8 @@
 <div class="comercial">
   <h1>Комерційна пропозиція за 24 години!</h1>
   <div class="button-groupe">
-    <button>завантажити прайс-лист</button>
-    <button>отримати розрахунок вартості</button>
+    <button id="loadpricebtn">завантажити прайс-лист</button>
+    <button id="getCount">отримати розрахунок вартості</button>
   </div>
 </div>
 
@@ -202,7 +206,7 @@
         <footer>
           <div class="contact-card"><img src="images/c-icn1.png" alt=""><p>Наш
             instagram: <br>airwshop</p></div>
-          <div class="contact-card"><img src="images/c-icn2.png" alt=""><p>Телефонуйте  <br>
+          <div class="contact-card"><a href="tel:+380960272443"><img src="images/c-icn2.png" alt=""></a><p>Телефонуйте  <br>
             096-027-24-43<br>
             Пн-Нд 10:00-19:00</p></div>
           <div class="contact-card"><img src="images/c-icn3.png" alt=""><p>Ми працюємо<br> по
@@ -210,11 +214,87 @@
         </footer>
 
 
+        <div id="contactsModal">
+          <div class="modal-content2">
+          <div class="insta"><img src="images/insta.png" alt="">airwshop </div>
+          <div class="telgram"><img src="images/telegram.png" alt="">096-027-24-43 </div>
+          <div class="viber"><img src="images/viber.png" alt="">096-027-24-43 </div>
+        
+              <button id="closeBtn2">Закрити</button>
+          </div>
+          
+        </div>
 
+        <div id="priceModal">
+          <div class="modal-content">
+              <h2>Прайс-лист</h2>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Послуга</th>
+                          <th>Ціна</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>КОНДИЦІОНЕРИ</th>
+                      <th></th>
+                  </tr>
+                      <tr>
+                          <td>Монтаж спліт-системи(без урахування матеріалу)</td>
+                          <td>від ₴150</td>
+                      </tr>
+                      <tr>
+                          <td>Демонтаж спліт-системи</td>
+                          <td>від ₴700</td>
+                      </tr>
+                      <tr>
+                          <td>Фреон-магістральб м.п.</td>
+                          <td>від ₴250</td>
+                      </tr>
+                      <tr>
+                        <td>Комплексна чистка кондиціонера</td>
+                        <td>від ₴250</td>
+                    </tr>
+                    <tr>
+                      <td>Дозаправка хладогеном, 100 гр.</td>
+                      <td>від ₴50</td>
+                  </tr>
+                  <tr>
+                    <th>ВЕНТИЛЯЦІЯ</th>
+                    <th></th>
+                </tr>
+                <tr>
+                  <td>Монтаж воздухопровода із цинкованої сталі, м2</td>
+                  <td>від ₴120</td>
+                </tr>
+                <tr>
+                    <td>Ізоляція воздухопровода, м2</td>
+                    <td>від ₴50</td>
+                </tr>
+                <tr>
+                  <td>Монтаж фасонних виробів, шт</td>
+                  <td>від ₴50</td>
+                </tr>
+                <tr>
+                  <td>Монтаж витяжного зонта</td>
+                  <td>від ₴300</td>
+                </tr>
+                <tr>
+                  <td>Монтаж вентилятора</td>
+                  <td>від ₴150</td>
+                </tr>
+                  </tbody>
+              </table>
+              <button id="closeBtn">Закрити</button>
+              <button id="shopBtn">Замовити</button>
+          </div>
+      </div>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-        <script src="index.js">
-         
-        </script>
+        <script src="index.js"></script>
+        <script src="windowsprice.js"></script>
+        <script src="windowsconacts.js"></script>
+        
   </body>
 </html>
